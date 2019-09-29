@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="authserver" />
+        <module name="common" />
+        <module name="configclient" />
+        <module name="configserver" />
+        <module name="consumerserver" />
+        <module name="eurekaserver" />
+        <module name="gatewayserver" />
+        <module name="microserver" />
+        <module name="test-config-client" />
+        <module name="testapi" />
+        <module name="testclient" />
+        <module name="testserver" />
+        <module name="zuulserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microserver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authserver" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="configclient" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="consumerserver" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="gatewayserver" options="-parameters" />
+      <module name="microserver" options="-parameters" />
+      <module name="test-config-client" options="-parameters" />
+      <module name="testapi" options="-parameters" />
+      <module name="testclient" options="-parameters" />
+      <module name="testserver" options="-parameters" />
+      <module name="zuulserver" options="-parameters" />
+    </option>
+  </component>
+</project>

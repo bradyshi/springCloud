@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: testclient
+  # 远程仓库的分支
+  cloud:
+    config:
+      name: test, test1
+      label: master
+      # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      # 和git里的文件名对应
+      profile: dev
+      discovery:
+        enabled: true
+        serviceId: config-server
+eureka:
+  client:
+    # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用,分隔
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
